@@ -1,4 +1,4 @@
-# 프로젝트명 : Pick me, Pick me!
+# _프로젝트명 : Pick me, Pick me!
 
 ## 팀명:
 
