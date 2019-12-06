@@ -10,7 +10,7 @@
 
 ![중간발표_2](https://user-images.githubusercontent.com/57213710/70320760-db1d0900-1868-11ea-97ab-3f97bc920c42.PNG)
 
-<ul> ㅇㅇ <ul>
+<ul> ㅇㅇ </ul>
   
 2. 프로젝트 스케치
 
