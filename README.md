@@ -14,5 +14,6 @@
 <ul> - 예상 구상도 </ul>
 ![중간발표_3](https://user-images.githubusercontent.com/57213710/70320769-e53f0780-1868-11ea-87da-02386bdc9ceb.PNG)
 
+
 3. 'Influencer's' Github commit 현황
 
