@@ -6,7 +6,7 @@
 
 __<em> '스타발굴' 앱 </em>__
 
-![중간발표_1](https://user-images.githubusercontent.com/57213710/70320737-cfc9dd80-1868-11ea-9b2a-414c6621f5c2.PNG)
+![중간발표_1](https://user-images.githubusercontent.com/57213710/70390732-faef3100-1a10-11ea-815b-ae8556be0c20.PNG)
 
 
 __<em> 1. 프로젝트 개요 </em>__
