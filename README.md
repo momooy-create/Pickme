@@ -18,15 +18,15 @@ __<em> 1. 프로젝트 개요 </em>__
        또 다른 사용자들은 이들을 평가하며 최고를 뽑는 '스타발굴' 웹페이지 제작을 목표로 함 </ul>
 
   
-  
-2. 프로젝트 스케치
+ 
+__<em> 2. 프로젝트 스케치 </em>__
 
 ![중간발표_3](https://user-images.githubusercontent.com/57213710/70320769-e53f0780-1868-11ea-87da-02386bdc9ceb.PNG)
 
 <ul> 에베베 </ul>
 
 
-3. 'Influencer's' Github commit 현황
+__<em> 3. 'Influencer's' Github commit 현황 </em>__
 
 <ul> dd </ul>
 
