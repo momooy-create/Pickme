@@ -37,5 +37,5 @@ __<em> 2. 프로젝트 스케치 </em>__
  
 __<em> 3. 'Influencer's' Github commit 현황 </em>__
 
-<ul> dd </ul>
+<ul> 깃 주소 : https://github.com/momooy-create/Pickme.git </ul>
 
