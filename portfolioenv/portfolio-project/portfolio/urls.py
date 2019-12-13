@@ -20,11 +20,13 @@ from django.conf.urls.static import static
 import Man.views
 import Women.views
 import login.views
+import Main.views
 
 
 urlpatterns = [
     path('admin', admin.site.urls, name='admin'),
     path('Man', Man.views.Manhome, name='Manhome'),
     path('Women', Women.views.Womenhome, name='Womenhome'),
-    path('login/', include('login.urls'))
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('login/', include('login.urls')),
+    path('Main/', include('Main.urls')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
