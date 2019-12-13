@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from .models import Women
 
 def Womenhome(request):
-	return render(request, 'home.html')
+	women = Women.objects
+	return render(request, 'Women.html', {'Women':women})
 

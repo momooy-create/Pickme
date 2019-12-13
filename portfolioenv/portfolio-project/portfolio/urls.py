@@ -24,7 +24,7 @@ import Main.views
 
 
 urlpatterns = [
-    path('admin', admin.site.urls, name='admin'),
+    path('admin/', admin.site.urls, name='admin'),
     path('Man', Man.views.Manhome, name='Manhome'),
     path('Women', Women.views.Womenhome, name='Womenhome'),
     path('login/', include('login.urls')),

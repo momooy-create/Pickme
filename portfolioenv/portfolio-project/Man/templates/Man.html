@@ -1,0 +1,56 @@
+<!-- {% extends "base.html" %}
+
+{% block contents %}
+ -->
+
+<html lang="en">
+  
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Pick me, Pick me</h1>
+      <p class="lead text-muted">최고의 스타를 발굴하라 ! </p>
+    </div>
+  </section>
+
+  <div class="album py-3 bg-light">
+    <div class="container" >
+
+      <div class="row">
+      {% for Man in Man.all %} 
+        <div class="col-md-3">
+          <div class="card mb-3 shadow-sm">
+          <img src = "{{ Man.image.url }}"  width="250px" height="250px"/>
+            <div class="card-body">
+              <p class="card-text"> &nbsp&nbsp&nbsp&nbsp이름 : &nbsp{{ Man.이름 }} 
+              <br>
+              &nbsp&nbsp&nbsp&nbsp나이 : &nbsp{{  Man.나이 }}
+              <br>
+              &nbsp&nbsp&nbsp&nbsp지역 : &nbsp{{ Man.지역 }}
+              <br>
+              &nbsp&nbsp&nbsp&nbsp분야 : &nbsp{{ Man.분야 }}
+              </p>
+            <div class ="d-flex justify_content-between align-items-center">  
+            </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}  
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+   <p> CopyRight Pick me {% now "Y" %}</p>
+  </div>
+</footer>
+</body>
+</html>
+
+<!-- {% endblock %} -->

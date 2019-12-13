@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import Man
 
 def Manhome(request):
-	return render(request, 'home.html')
+	man = Man.objects
+	return render(request, 'Man.html', {'Man':man})
