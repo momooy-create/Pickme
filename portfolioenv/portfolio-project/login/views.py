@@ -20,7 +20,7 @@ def login(request):
 		user = auth.authenticate(request, username=username, password = password)
 		if user is not None:
 			auth.login(request, user)
-			return redirect('Manhome')
+			return redirect('Main')  # 아이디와 비밀번호가 일치하면 로그인 성공 후 메인페이지로
 		else:
 			return render(request, 'login.html', {'error': '아이디 혹은 비밀번호를 확인해 주세요.'})
 	else:
