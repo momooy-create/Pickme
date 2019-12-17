@@ -8,15 +8,36 @@
 
 <main role="main">
 
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h1 class="jumbotron-heading">Pick me, Pick me</h1>
-      <p class="lead text-muted">최고의 스타를 발굴하라 ! </p>
+  <section class="jumbotron text-center" style="background-color: rgb(230,250,255);" >
+    <div class="card text-white bg-secondary my-5 py-1 text-center bg-info" >
+        <p class="text-white m-0 font-weight-normal" >BEST 남자 스타 !</p>
+
     </div>
+        <div class="row align-items-center my-2">
+
+        <div class="col-lg-7">
+            <img class="img-fluid rounded mb-1 mb-lg-0" src="{{Man.all.2.image.url}}" width="400px" height="400px">
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-0">
+            <h3 >이름 : {{Man.all.2.이름}}</h1>
+            <p class=mt-2>분야 : {{Man.all.2.분야}}</p>
+            <p class=mt-2>나이 : {{Man.all.2.나이}}</p>
+            <p class=mt-2>지역 : {{Man.all.2.지역}}</p>
+
+            <br>
+            <center><a class="btn btn-info text-white" href="{%  url 'man3' %}">상세 정보</a></center>
+        </div>
+        <!-- /.col-md-4 -->
+    </div>
+    
+
   </section>
 
   <div class="album py-3 bg-light">
     <div class="container" >
+
+      
 
       <div class="row">
       {% for Man in Man.all %} 
@@ -24,14 +45,35 @@
           <div class="card mb-3 shadow-sm">
           <img src = "{{ Man.image.url }}"  width="250px" height="250px"/>
             <div class="card-body">
-              <p class="card-text"> &nbsp&nbsp&nbsp&nbsp이름 : &nbsp{{ Man.이름 }} 
+              <center><p class="card-text"> 이름 : &nbsp{{ Man.이름 }}
               <br>
-              &nbsp&nbsp&nbsp&nbsp나이 : &nbsp{{  Man.나이 }}
+              분야 : &nbsp{{ Man.분야 }}
               <br>
-              &nbsp&nbsp&nbsp&nbsp지역 : &nbsp{{ Man.지역 }}
-              <br>
-              &nbsp&nbsp&nbsp&nbsp분야 : &nbsp{{ Man.분야 }}
-              </p>
+              {% if Man.이름 == "정국" %}
+              <center><a href="{% url 'man1' %}" class="btn btn-info" style="border-radius: 0.5em; padding: 5px 20px;">상세정보</center></a>
+              {% endif %}
+              {% if Man.이름 == "상호" %}
+              <center><a href="{% url 'man2' %}" class="btn btn-info" style="border-radius: 0.5em; padding: 5px 20px;">상세정보</center></a>
+              {% endif %}
+              {% if Man.이름 == "김태형" %}
+              <center><a href="{% url 'man3' %}" class="btn btn-info" style="border-radius: 0.5em; padding: 5px 20px;">상세정보</center></a>
+              {% endif %}
+              {% if Man.이름 == "김종인" %}
+              <center><a href="{% url 'man4' %}" class="btn btn-info" style="border-radius: 0.5em; padding: 5px 20px;">상세정보</center></a>
+              {% endif %}
+              {% if Man.이름 == "김석진" %}
+              <center><a href="{% url 'man5' %}" class="btn btn-info" style="border-radius: 0.5em; padding: 5px 20px;">상세정보</center></a>
+              {% endif %}
+              {% if Man.이름 == "김희철" %}
+              <center><a href="{% url 'man6' %}" class="btn btn-info" style="border-radius: 0.5em; padding: 5px 20px;">상세정보</center></a>
+              {% endif %}
+              {% if Man.이름 == "도경수" %}
+              <center><a href="{% url 'man7' %}" class="btn btn-info" style="border-radius: 0.5em; padding: 5px 20px;">상세정보</center></a>
+              {% endif %}
+              {% if Man.이름 == "지민" %}
+              <center><a href="{% url 'man8' %}" class="btn btn-info" style="border-radius: 0.5em; padding: 5px 20px;">상세정보</center></a>
+              {% endif %}
+              </p></center>
             <div class ="d-flex justify_content-between align-items-center">  
             </div>
             </div>

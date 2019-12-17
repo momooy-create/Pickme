@@ -1,6 +1,6 @@
 @echo off
 
-set "VIRTUAL_ENV=C:\Users\admin\Desktop\mo\MOBILE~1\PICKME~1\PORTFO~1"
+set "VIRTUAL_ENV=C:\pickme\portfolioenv"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
@@ -13,7 +13,7 @@ if defined _OLD_VIRTUAL_PROMPT (
     )
 )
 if not defined VIRTUAL_ENV_DISABLE_PROMPT (
-    set "PROMPT=(PORTFO~1) %PROMPT%"
+    set "PROMPT=(portfolioenv) %PROMPT%"
 )
 
 REM Don't use () to avoid problems with them in %PATH%

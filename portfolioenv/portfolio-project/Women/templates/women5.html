@@ -1,0 +1,62 @@
+<!-- {% extends "base.html" %}
+
+{% block contents %}
+ -->
+
+<html lang="en">
+  
+
+<main role="main">
+
+  <section class="jumbotron text-center" style="background-color: rgb(210,250,255);" >
+    <div class="container">
+      <h1 class="jumbotron-heading">Pick me, Pick me</h1>
+      
+    </div>
+  </section>
+
+  <div class="album py-3 bg-light">
+    <div class="container" >
+
+<div class="text-center">
+        <img class="rounded ml-5 m-2" src="{{women5.all.4.image.url}}" width="400">
+        <br>
+        <br>
+        <form><input type = 'button' value="투표하기" onclick="test()" class="btn btn-info"></form>
+        <br>
+        <br>
+       
+<script>
+function test() {
+    alert("투표가 완료 되었습니다 감사합니다.");
+}
+</script>
+
+        <h5 class="m-0 font-weight-normal">이름 : {{women5.all.4.이름}}</h5>
+
+        <br>
+        <h5 class="m-0 font-weight-normal">나이 : {{women5.all.4.나이}}</h5>
+        <br>
+        <h5 class="m-0 font-weight-normal">지역 : {{women5.all.4.지역}}</h5>
+        <br>
+        <h5 class="m-0 font-weight-normal">분야 : {{women5.all.4.분야}}</h5>
+        <br>
+    </div>
+
+      
+
+
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+   <p> CopyRight Pick me {% now "Y" %}</p>
+  </div>
+</footer>
+</body>
+</html>
+
+<!-- {% endblock %} -->
