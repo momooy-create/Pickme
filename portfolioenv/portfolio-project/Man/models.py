@@ -7,4 +7,5 @@ class Man(models.Model):
 	지역 = models.CharField(null = True, max_length=30)
 	분야 = models.CharField(null = True, max_length=20)	
 	
+	
 

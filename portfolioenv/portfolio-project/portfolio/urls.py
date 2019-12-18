@@ -45,4 +45,5 @@ urlpatterns = [
     path('Women8', Women.views.women8, name='women8'),
     path('login/', include('login.urls')),
     path('Main/', include('Main.urls')),
+    path('Mregister', Man.views.Mregister, name="Mregister")
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

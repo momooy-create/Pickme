@@ -5,6 +5,9 @@ def Manhome(request):
 	man = Man.objects
 	return render(request, 'Man.html', {'Man':man})
 
+def Mregister(request):
+	return render(request, 'Mregister.html')
+
 def man1(request):
 	man1 = Man.objects
 	return render(request, 'man1.html', {'man1':man1})

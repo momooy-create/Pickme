@@ -33,7 +33,7 @@
     
 
   </section>
-
+ 
   <div class="album py-3 bg-light">
     <div class="container" >
 
@@ -73,17 +73,21 @@
               {% if Man.이름 == "지민" %}
               <center><a href="{% url 'man8' %}" class="btn btn-info" style="border-radius: 0.5em; padding: 5px 20px;">상세정보</center></a>
               {% endif %}
+
               </p></center>
             <div class ="d-flex justify_content-between align-items-center">  
             </div>
             </div>
           </div>
+
         </div>
       {% endfor %}  
-      </div>
 
+      </div>
+<center><a href="{% url 'Mregister' %}" class="btn btn-warning mt-2 " style="border-radius: 0.5em; padding: 5px 20px;">등록하기</a></center>
     </div>
   </div>
+</div>
 
 </main>
 
