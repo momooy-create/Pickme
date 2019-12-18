@@ -8,7 +8,7 @@ def signup(request):
 			user = User.objects.create_user(
 				username = request.POST["username"],password=request.POST["password1"])
 			auth.login(request,user)
-			return redirect('Manhome')
+			return redirect('Main')
 		return render(request, 'signup.html')
 		
 	return render(request, 'signup.html')

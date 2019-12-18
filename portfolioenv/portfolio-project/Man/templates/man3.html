@@ -26,14 +26,13 @@
         <br>
         <br>
        
+       
 <script>
- var count = 0;
 function test() {
-    count = count + 1;
- 
- alert("투표가 완료 되었습니다 감사합니다." + "현재득표수는 " + count + " 표입니다.");
- document.getElementById('counter').innerHTML="현재 득표수는 " + count + " 표 입니다."
-} 
+    alert("투표가 완료 되었습니다 감사합니다." count);
+    count = 0;
+    count ++;
+}
 </script>
 
         <h5 class="m-0 font-weight-normal">이름 : {{man3.all.2.이름}}</h5>
@@ -44,7 +43,8 @@ function test() {
         <br>
         <h5 class="m-0 font-weight-normal">분야 : {{man3.all.2.분야}}</h5>
         <br>
-        <p id="counter"> 현재 득표수는 0표 입니다. </p> 
+        <h5 class="mt-0 font-weight-normal" onclick="location.href='https://www.instagram.com/momoo_y/'">SNS : {{man3.all.2.SNS}}</h5> 
+        <br>
     </div>
 
       
